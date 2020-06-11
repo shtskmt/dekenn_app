@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>de.ke.nn</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+<main id="main">
+  <div class="container">
+    <div class="col-lg-8 offset-lg-2 col-md-6 offset-md-3 text-center animate-box">
+          <h1><%= @post.title %></h1>
+          <p><%= @post.author.name %></p>
+          <p><%= @post.content.html_safe %></p>
+    </div>
+  </div>
+</main>
