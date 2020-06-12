@@ -7,7 +7,6 @@ ActiveAdmin.register Post do
     column :author
     column :title
     column :publish_date
-    column :content
     actions
   end
 
