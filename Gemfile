@@ -63,3 +63,4 @@ gem 'ckeditor', git: "https://github.com/galetahub/ckeditor", branch: "master"
 gem "mini_magick"
 gem 'jquery-waypoints-rails', '~> 2.0', '>= 2.0.5'
 gem 'active_admin_flat_skin'
+gem 'rails-i18n'
