@@ -1,11 +1,18 @@
 
 <div class="card col-md-4">
-  <%= link_to post do %>
+  <div class="post-date">
+  <span class="float-right"><small><%= post.publish_date %></small></span>
+  </div>
   <div class="thumb-wrapper">
-  <%= image_tag(post.image, :class =>"img-responsive")%>
+  <%= link_to post do %>
+  <%= image_tag(post.image, :class =>"img-responsivee")%>
   </div>
   <div class="card-body">
-    <h5 class="card-title"><%= link_to(post.title, post_path(post)) %></h5>
-    <% end %>
+    <h5 class="card-title text-center"><%= link_to(truncate(post.title), post_path(post)) %></h5>
+    <p class="text-center"><small>writer:<%= post.author.name %></small></p>
   </div>
+  <div class="card-body">
+    <small><%=truncate(strip_tags(post.content),length:50) %></small>
+    </div>
+    <% end %>
 </div>
