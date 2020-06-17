@@ -18,7 +18,7 @@ ActiveAdmin.register Post do
     f.inputs do
       f.input :title
       f.input :author
-      f.input :publish_date
+      f.input :publish_date, as: :datepicker
       f.input :content, as: :ckeditor # ここでckeditorを呼び出す
       f.input :image, as: :file # active storageを使って画像UPする際はas: :file
       f.actions

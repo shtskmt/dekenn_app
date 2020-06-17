@@ -35,7 +35,7 @@
  body {
    font:Century, Verdana,serif;
    line-height: 1.8;
-   font-size: 20px;
+   font-size: 16px;
    background: #eeeff0;
    font-weight: 300;
  }
@@ -56,7 +56,7 @@
 
  p {
    margin-bottom: 1.5em;
-   font-size: 15px;
+   font-size: 14px;
    color: #848484;
    font-weight: 300;
    font-family: "Roboto", Century, sans-serif;
@@ -64,7 +64,7 @@
 
  h1, h2, h3, h4, h5, h6 {
    color: #000;
-   font-size: 25px;
+   font-size: 16px;
    font-family:"Roboto", 'Sawarabi Mincho', Century, sans-serif;
    font-weight: 400;
    margin: 0 0 30px 0;
@@ -193,12 +193,12 @@
    display: inline-block;
    margin-left: 50px;
  }
- @media screen and (max-width: 480px) {
-   #_header .nav li {
-     width: 100%;
-     margin-left: 0;
-   }
- }
+  @media screen and (max-width: 480px) {
+    #_header .nav li {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
 
  #_header .nav li a {
    font-family: "Roboto Slab", Century, sans-serif;
@@ -308,6 +308,7 @@
 
 #_footer p {
    line-height: 1;
+   margin-bottom: 01em;
  }
  #_footer .border {
    border-top: 1px solid #e6e6e6;
@@ -332,7 +333,7 @@
  #_footer small {
    text-transform: uppercase;
    font-weight: 400;
-   font-size: 14px;
+   font-size: 12px;
    letter-spacing: .01em;
    font-family: "Roboto", Century, sans-serif;
  }
@@ -369,7 +370,7 @@
    width: 100%;
    height: 57px;
    padding: 10px 20px;
-   font-size: 20px;
+   font-size: 14px;
    line-height: 1.42857;
    color: #555555;
    background-color: #fff;
@@ -519,8 +520,25 @@ img.img-responsivee {
   margin-bottom: 2px;
 }
 @media screen and (min-width: 992px){
-  
+
 }
+
+.btn-sticky {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #f7f7f7;
+  border-left: solid 6px #ff7c5c;/*左線*/
+  color: #ff7c5c;/*文字色*/
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  margin-bottom: 10px;
+}
+.btn-sticky:active {
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+  transform: translateY(2px);
+}
+
 
 
 
