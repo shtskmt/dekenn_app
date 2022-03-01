@@ -58,7 +58,7 @@ gem 'jquery-rails'
 gem 'animate.css-rails', '~>3.2.0'
 gem 'activeadmin'
 gem 'devise'
-gem 'image_processing', '~> 1.9.3'
+gem 'image_processing', '~> 1.12.2'
 gem 'ckeditor', git: "https://github.com/galetahub/ckeditor", branch: "master"
 gem "mini_magick"
 gem 'jquery-waypoints-rails', '~> 2.0', '>= 2.0.5'
